@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Samuel Freitas</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <header>
         <a href="#" class="logo">Samuel Freitas</a>
@@ -14,7 +28,7 @@
     <section class="home" id="home">
         <div class="home-content">
             <h1>Olá, sou o Samuel Freitas</h1>
-            <p class="subtitle">Desenvolvedor Mobile IOS | Transformando ideias em código limpo e funcional.</p>
+            <p class="subtitle">Desenvolvedor Mobile iOS | Transformando ideias em código limpo e funcional.</p>
             <div class="social">
                 <a href="https://www.linkedin.com/in/samuelfreitas-dev/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/samfreitasxs" target="_blank"><i class='bx bxl-github'></i></a>
@@ -31,9 +45,9 @@
             <h2 class="heading">Sobre <span>Mim</span></h2>
             <img src="assets/about.png" alt="Foto de Samuel Freitas" class="about-img">
             <p>
-                Sou um desenvolvedor apaixonado por tecnologia e pela criação de interfaces web intuitivas e responsivas. Minha jornada na programação começou com o desejo de construir soluções que realmente façam a diferença na vida das pessoas.
+                Sou um desenvolvedor apaixonado por tecnologia e pela criação de aplicativos mobile intuitivos e de alta performance. Minha jornada na programação começou com o desejo de construir soluções que realmente façam a diferença na vida das pessoas.
                 <br><br>
-                Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Atualmente, meu foco está em React e em todo o seu ecossistema para criar aplicações web modernas e de alta performance.
+                Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Atualmente, meu foco está no desenvolvimento iOS com SwiftUI, buscando criar experiências de usuário fluidas e modernas.
             </p>
         </div>
     </section>
@@ -42,28 +56,21 @@
         <h2 class="heading">Minhas <span>Habilidades</span></h2>
         <div class="skills-container">
             <div class="skills-box">
-                <i class="bx bxl-html5"></i>
-                <span>HTML5</span>
+                <i class='bx bxl-apple'></i> <span>SwiftUI</span>
             </div>
             <div class="skills-box">
-                <i class="bx bxl-css3"></i>
-                <span>CSS3</span>
-            </div>
-            <div class="skills-box">
-                <i class="bx bxl-javascript"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skills-box">
-                <i class='bx bxl-typescript'></i>
-                <span>TypeScript</span>
-            </div>
-            <div class="skills-box">
-                <i class="bx bxl-react"></i>
-                <span>React</span>
+                <i class='bx bxl-apple'></i> <span>UIKit</span>
             </div>
             <div class="skills-box">
                 <i class='bx bxl-git'></i>
                 <span>Git</span>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxs-data'></i> <span>Core Data</span>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-firebase'></i>
+                <span>Firebase</span>
             </div>
         </div>
     </section>
@@ -71,40 +78,39 @@
     <section class="projects" id="projects">
         <h2 class="heading">Últimos <span>Projetos</span></h2>
         <div class="projects-container">
-            <div class="Gerador-de-QRCode">
-                <img src="assets/projeto-pokedex.png" alt="Gerador-de-QRCode">
+            <div class="project-card">
+                <img src="assets/projeto-qrcode.png" alt="Gerador de QRCode">
                 <div class="project-info">
-                    <h3>Pokedex</h3>
-                    <p> Criacao de Gerador de QRCode Com JETPACK COMPOSE </p>
+                    <h3>Gerador de QRCode</h3>
+                    <p>Aplicativo para Android nativo que gera QR Codes a partir de qualquer texto ou link inserido pelo usuário, utilizando as melhores práticas de desenvolvimento com Jetpack Compose.</p>
                     <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>Kotlin</span>
+                        <span>Jetpack Compose</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/samfreitasxs/Gerador-de-QRCode" target="_blank" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/samfreitasxs/Gerador-de-QRCode" target="_blank" class="btn">Ver no GitHub</a>
                         <a href="https://github.com/samfreitasxs/Gerador-de-QRCode" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="Lembrete de Tomar agua">
-                <img src="assets/projeto-loja.png" alt="Projeto Loja Virtual">
+            <div class="project-card">
+                <img src="assets/projeto-beberagua.png" alt="App Lembrete de Beber Água">
                 <div class="project-info">
-                    <h3>Loja Virtual</h3>
-                    <p></p> Aplicativo simples e intuitivo para iOS que ajuda você a manter-se hidratado ao longo do dia! Com lembretes personalizáveis e um acompanhamento visual do seu progresso, cuidar da sua saúde nunca foi tão fácil.</p>
+                    <h3>Lembrete de Beber Água</h3>
+                    <p>Aplicativo simples para iOS que ajuda o usuário a se manter hidratado. Apresenta lembretes personalizáveis e acompanhamento visual do progresso diário.</p>
                     <div class="project-tech">
-                        <span>React</span>
-                        <span>CSS</span>
+                        <span>SwiftUI</span>
+                        <span>Core Data</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/samfreitasxs/App-BeberAgua" target="_blank" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/samfreitasxs/App-BeberAgua" target="_blank" class="btn">Ver no GitHub</a>
                         <a href="https://github.com/samfreitasxs/App-BeberAgua" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
 
-            </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -131,3 +137,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
+
+</html>
