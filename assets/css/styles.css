@@ -51,30 +51,30 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 3rem 9%;
     background: var(--bg-color);
     display: flex;
-    justify-content: center; /* Alterado para 'center' para centralizar o menu */
+    justify-content: center;
     align-items: center;
     z-index: 100;
 }
 
 /* ===== AJUSTE PARA O MENU FICAR HORIZONTAL ===== */
 .navbar {
-    list-style: none; /* Remove os pontos (bullets) da lista */
+    list-style: none;
     text-align: center;
 }
 
 .navbar li {
-    display: inline-block; /* Alinha os itens da lista um ao lado do outro */
+    display: inline-block;
 }
-/* ===== FIM DO AJUSTE ===== */
+
 
 
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    margin: 0 2rem; /* Alterado para espaçamento simétrico */
+    margin: 0 2rem; 
     transition: .3s;
 }
 
