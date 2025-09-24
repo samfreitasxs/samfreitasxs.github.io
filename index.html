@@ -1,710 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Portfolio Samuel Freitas</title>
-</head>
-
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Samuel Freitas,</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Contact Me
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-
-            <div class="nav__btns">
-                <!--Theme change button-->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+    <header>
+        <a href="#" class="logo">Samuel Freitas</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
     </header>
 
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/samuelfreitass/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-
-                        <a href="https://github.com/samfreitasxs" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="13" y="16" xlink:href="assets/img/about.png" />
-                            </g>
-                        </svg>
-
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Ola sou o  Samuel Freitas</h1>
-                        <h3 class="home__subtitle">Sênior Quality Assurance</h3>
-                        <p class="home__description">Sou analista de qualidade, faz mais de 6 anos com experiência e vivência em atividades de execução e elaboração de testes Web, Mobile e APIs tanto testes manuais e automatizados.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contate-me <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home_scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Rolar para baixo</span>
-                        <i class="uil uil-arrow-down homw__scroll-arrow"></i>
-                    </a>
-                </div>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Olá, sou o Samuel Freitas</h1>
+            <p class="subtitle">Desenvolvedor Mobile IOS | Transformando ideias em código limpo e funcional.</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/samuelfreitas-dev/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/samfreitasxs" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title"> Sobre mim</h2>
-            <span class="section__subtitle">Minha introdução</span>
-
-            <div class="about__container container grid">
-                <img src="assets/img/about.png" alt="" class="about__img">
-
-                <div class="about__data">
-                    <p class="about__description">
-                        Profissional com mais de 6 anos de experiência em testes manuais e automatizados, atuando em Web, Mobile e APIs. Experiência em liderança técnica de QA, definição de estratégias de testes, automação de cenários E2E com Cypress, Appium e Cucumber, além de forte atuação em ambientes ágeis (Scrum/Kanban). Foco em qualidade, escalabilidade e melhoria contínua, garantindo entregas confiáveis e de alto impacto para o negócio.
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">06+</span>
-                            <span class="about__info-name">Experiência em <br> Anos </span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Empresas <br> Trabalhadas </span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Projetos <br> Concluidos </span>
-                        </div>
-                    </div>
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/Curriculo_Samuel_Freitas_ATS.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">Meus Projetos</a>
+                <a href="assets/Curriculo_Samuel_Freitas_ATS.pdf" target="_blank" class="btn btn-outline">Download CV</a>
             </div>
-
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Habilidades</h2>
-            <span class="section__subtitle">Meu nível técnico</span>
-
-            <div class="skills__container container grid">
-                <div>
-
-
-                    <!--====================== SKILLS 2 =============================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Tests Frontend</h1>
-                                <span class="skills__subtitle">Mais de 6 anos</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Cypress</h3>
-                                    <div class="skills__number">100%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__Cypress"></div>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Appium</h3>
-                                    <div class="skills__number">80%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__Appium"></div>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <div class="skills__number">80%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__javascript"></div>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Selenium</h3>
-                                    <div class="skills__number">60%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__Selenium"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!--====================== SKILLS 1 =============================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-server-connection skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Tests Backend</h1>
-                                    <span class="skills__subtitle">Mais de 4 anos</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Postman</h3>
-                                        <div class="skills__number">85%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__Postman"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Api REST</h3>
-                                        <div class="skills__number">60%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__ApiREST"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">K6</h3>
-                                        <div class="skills__number">40%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__JMeter"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Microservices</h3>
-                                        <div class="skills__number">20%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__Microservices"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--====================== SKILLS 3 =============================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-code-branch skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">DevOps & Continuous Testing</h1>
-                                    <span class="skills__subtitle">Mais de 2 anos</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">GitLab</h3>
-                                        <div class="skills__number">80%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__GitLab"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Bitbucket</h3>
-                                        <div class="skills__number">70%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__Bitbucket"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Azure DevOps</h3>
-                                        <div class="skills__number">20%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__Microservices"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualificações</h2>
-            <div class="section__subtitle">Minha jornada pessoal</div>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Educação 
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Carreira
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!--===============================QUALIFICATION CONTENT 1 ===========================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--===============================QUALIFICATION 1 ===========================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Pós Graduação em Engenharia de Software</h3>
-                                <span class="qualification__subtitle">Faculdade Vincit</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Janeiro, 2023 - Junho, 2023
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--===============================QUALIFICATION 2 ===========================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Analista de Sitemas</h3>
-                                <span class="qualification__subtitle">UNINTER Centro Universitário Internacional</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Janeiro, 2020 - Janeiro, 2022
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!--===============================QUALIFICATION CONTENT 2 ===========================-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--===============================QUALIFICATION 1 ===========================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">
-                                    Senior Quality Assurance Automation Engineer</h3>
-                                <span class="qualification__subtitle">
-                                    <a href="https://www.linkedin.com/company/onnitechoficial/about/"
-                                        target="_blank">Onnitech</a>
-                                </span>
-                                <h6>
-                                    Atuação na estruturação da área de QA e planejamento da automação de testes
-
-Atuando no projeto da Alelo (AleloPod) trabalhando na criação de testes End-to-end, documentação de testes, planejamento e implementação de processos de testes funcionais e não funcionais, escrita de testes em Guerkin - BDD, implementação de testes de interface gráfica do usuário (GUI), vivência com metodologia ágeil (Kanban), participações de dailys e ritos de passagem, versionamento de código (GITHub) e utilizando as tecnologias.
-                                    <br>-Metodologias:
-                                    Scrum and Kanban
-                                    <br>- Ferramentas:
-                                    JavaScript - Cypress - Cucumber - BDD 
-Android Studio - Visual Studio
-GitHub - Jira - Jenkins 
-Postman - Appium
-SQL - MongoDB
-                                </h6>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Novembro, 2023
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--===============================QUALIFICATION 2 ===========================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Quality Assurance Test Analyst</h3>
-                                <span class="qualification__subtitle">
-                                    <a href="https://neon.com.br/" target="_blank">Neon</a>
-                                </span>
-                                <h6>
-                                    Atuação na área de QA
-
-                                    Planejamento e implementação de processos de testes funcionais e não funcionais, criação e gerenciamento de testes automatizados de API e de Contrato, arquitetura dos testes Guerkin - BDD, testes de contrato de API, testes automatizados End-to-End, teste da interface gráfica do usuário (GUI), criação de automações Android, IOS escrita de cenários step-by-step, auutomação mobile com Farm de testes, testes com Xcode, utilizando IPAs e obtendo logs de dispositivos , vivência com metodologias ágeis (Scrum e Kanban), participações de dailys e ritos de passagem, desenvolvimento e execução de testes (funcional, integração, API, backend) automatizados gerencia de massa de dados para execução dos testes, gestão de defeitos em fase de desenvolvimento, utilização no dia a dia de banco de dados (SQL, MongoDB, Redis), testes de Integração/API (Insomnia, Postman, HTTParty), práticas de DevOps
-                                    versionamento de código (GITHub, Bitbucket).
-                                    <br>- metodologias:
-                                    Scrum
-                                    <br>- Ferramentas:
-                                    Ruby - JavaScript - Cucumber - Zephyr, Jira - Jenkins - RabbitMQ - Grafana, GitHub - Bitbucket - Browserstack Postman - Appium - Xcode - Android Studio Insomnia - Postman - HTTPartySQL - MongoDB - Redis
-                                </h6>
-
-
-
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Abril, 2023
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--===============================QUALIFICATION 3 ===========================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">
-                                    Software Quality Analyst</h3>
-                                <span class="qualification__subtitle">
-                                    <a href="https://www.payface.com.br/" target="_blank"> PayFace</a>
-                                    <h6> Trabalhando na criação de testes End-to-end, documentação de testes, planejamento e implementação de processos de testes funcionais e não funcionais, escrita de testes em Guerkin - BDD, implementação de testes de interface gráfica do usuário (GUI), vivência com metodologias ágeis (Scrum e Kanban), participações de dailys e ritos de passagem, versionamento de código (GITHub, Bitbucket) e utilizando as tecnologias.</h6>
-
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        Janeiro, 2021 - Maio, 2022
-                                    </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            <h2 class="section__title">Serviços</h2>
-            <span class="section__subtitle">O que eu ofereço</span>
-
-            <div class="services__container container grid">
-                <!--===================== SERVICES 1 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <h3 class="services__title">Frontend <br> Tester</h3>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Usability Testing</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-                                <span class="qualification__subtitle">
-
-                                    Usability and accessibility of software are important quality characteristics and
-                                    may determine whether or not the software is successful.</span>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop tests in user interface;</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I create business rules verification;</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop test scripts.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--===================== SERVICES 2 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-server-connection skills__icon"></i>
-                        <h3 class="services__title">Backend <br> Tester</h3>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Performance Testing</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <span class="qualification__subtitle">
-
-                                    Performance is a major quality factor in most systems and applications, regardless
-                                    of the computing environment.</span>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop API testing;</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop performance testing;</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop integration test.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!--===================== SERVICES 3 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-code-branch skills__icon"></i>
-                        <h3 class="services__title">DevOps <br> Tester</h3>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">DevOps</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-                                <span class="qualification__subtitle">
-                                    DevOps bridges the gap between development and operations by bringing the two teams
-                                    together for the entire software lifecycle, from development to delivery. </span>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Continuous development;</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Continuous integration;</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Continuous testing;</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Continuous deployment;</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Continuous delivery and continuous monitoring.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contate-me</h2>
-            <span class="section__subtitle"></span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">+55 9 99999999</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">samuel.devprojects@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Maringa, Parana, Brazil</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__subtitle">Samuel Freitas</h1>
-                    <span class="footer__subtitle">Sênior Quality Assurance</span>
-                </div>
-
-                <div class="footer__socials">
-
-                    <a href="https://www.instagram.com" target="_blank" class="footer__social"
-                        class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/samuelfreitass/" target="_blank" class="footer__social"
-                        class="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-
-                    <a href="https://github.com/samfreitasxs" target="_blank" class="footer__social">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <p class="footer__copy">&#169; Samuel Freitas. All rights reserved.</p>
         </div>
+    </section>
 
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <img src="assets/about.png" alt="Foto de Samuel Freitas" class="about-img">
+            <p>
+                Sou um desenvolvedor apaixonado por tecnologia e pela criação de interfaces web intuitivas e responsivas. Minha jornada na programação começou com o desejo de construir soluções que realmente façam a diferença na vida das pessoas.
+                <br><br>
+                Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Atualmente, meu foco está em React e em todo o seu ecossistema para criar aplicações web modernas e de alta performance.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Minhas <span>Habilidades</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="bx bxl-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="skills-box">
+                <i class="bx bxl-css3"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="skills-box">
+                <i class="bx bxl-javascript"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-typescript'></i>
+                <span>TypeScript</span>
+            </div>
+            <div class="skills-box">
+                <i class="bx bxl-react"></i>
+                <span>React</span>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-git'></i>
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Últimos <span>Projetos</span></h2>
+        <div class="projects-container">
+            <div class="Gerador-de-QRCode">
+                <img src="assets/projeto-pokedex.png" alt="Gerador-de-QRCode">
+                <div class="project-info">
+                    <h3>Pokedex</h3>
+                    <p> Criacao de Gerador de QRCode Com JETPACK COMPOSE </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/samfreitasxs/Gerador-de-QRCode" target="_blank" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/samfreitasxs/Gerador-de-QRCode" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Lembrete de Tomar agua">
+                <img src="assets/projeto-loja.png" alt="Projeto Loja Virtual">
+                <div class="project-info">
+                    <h3>Loja Virtual</h3>
+                    <p></p> Aplicativo simples e intuitivo para iOS que ajuda você a manter-se hidratado ao longo do dia! Com lembretes personalizáveis e um acompanhamento visual do seu progresso, cuidar da sua saúde nunca foi tão fácil.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/samfreitasxs/App-BeberAgua" target="_blank" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/samfreitasxs/App-BeberAgua" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Entre em <span>Contato</span></h2>
+        <div class="contact-content">
+            <p>Estou aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato comigo através do meu e-mail ou LinkedIn.</p>
+            <p class="email">samuelfreitas.dev@gmail.com</p>
+            <div class="social">
+                 <a href="https://www.linkedin.com/in/samuelfreitas-dev/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/samfreitasxs" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 por Samuel Freitas | Todos os Direitos Reservados.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
-
-    <!--==================== SCROLL TOP ====================-->
-    <a href="" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scroll__icon"></i>
-    </a>
-
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
-
-</html>
