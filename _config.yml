@@ -1,7 +1,7 @@
 # Configurações do Site
 title: "Samuel Freitas"
 description: "Software Developer & QA Automation" # Você pode ajustar sua bio aqui
-url: "samfreitasxs.github.io" # O endereço gratuito do seu site
+url: "https://samfreitasxs.github.io" # O endereço gratuito do seu site
 baseurl: "" # Deixe vazio se o site estiver na raiz do repositório
 
 # Configurações do Tema (So Simple)
@@ -18,7 +18,7 @@ plugins:
 # Configurações do Autor
 author:
   name: "Samuel Freitas"
-  avatar: "/assets/images/bio-photo.jpg" # Caminho para sua foto no repositório
+  avatar: "//assets/images/bio-foto.png" # Caminho para sua foto no repositório
   bio: "Desenvolvedor focado em automação e qualidade de software."
   location: "Brasil"
   links:

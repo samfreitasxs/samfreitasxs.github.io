@@ -1,0 +1,18 @@
+.navigation-wrapper {
+  background-color: #000;
+  border-radius: 50px; /* Faz o formato de pílula */
+  padding: 5px 30px;
+  margin: 20px auto;
+  max-width: fit-content;
+}
+
+.navigation-wrapper ul li a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.navigation-wrapper ul li a:hover {
+  color: #ffcc00 !important; /* Cor de destaque ao passar o mouse */
+}
