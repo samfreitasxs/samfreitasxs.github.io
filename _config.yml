@@ -1,44 +1,37 @@
-# Configurações do Site
 title: "Samuel Freitas"
-description: "Software Developer & QA Automation" # Você pode ajustar sua bio aqui
-url: "https://samfreitasxs.github.io" # O endereço gratuito do seu site
-baseurl: "" # Deixe vazio se o site estiver na raiz do repositório
+description: "Software Developer & QA Automation"
+url: "https://samfreitasxs.github.io" # Adicione o https://
+baseurl: ""
 
-# Configurações do Tema (So Simple)
+# Configurações do Tema
 remote_theme: "mmistakes/so-simple-theme"
 locale: "pt-BR"
 
-# Plugins necessários
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
 
-# Configurações do Autor
 author:
   name: "Samuel Freitas"
-  avatar: "//assets/images/bio-foto.png" # Caminho para sua foto no repositório
+  # CORREÇÃO: O nome no seu VS Code é .png, não .jpg
+  avatar: "/assets/images/bio-foto.png" 
   bio: "Desenvolvedor focado em automação e qualidade de software."
-  location: "Brasil"
+  location: "Maringá, PR"
   links:
     - title: "GitHub"
-      url: "https://samfreitasxs.github.io"
+      url: "https://github.com/samfreitasxs"
       icon: "fab fa-fw fa-github"
     - title: "LinkedIn"
       url: "https://www.linkedin.com/in/samuelfreitass/"
       icon: "fab fa-fw fa-linkedin"
 
-# Configurações de Leitura
-read_time: true
-words_per_minute: 200
-
-# Configurações de Posts
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      classes: "wide" # Deixa o texto com uma largura agradável
-      author_profile: true # Mostra sua bio ao lado do post
+      classes: "wide"
+      author_profile: true
