@@ -1,0 +1,10 @@
+# Menu principal do topo
+main:
+  - title: "Início"
+    url: /
+  - title: "Sobre Mim"
+    url: /about/
+  - title: "Projetos"
+    url: /projetos/
+  - title: "Shop"
+    url: /shop/
