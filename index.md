@@ -1,25 +1,20 @@
-<script src="/assets/js/main.js"></script>
-
 ---
 layout: compress
 ---
 
-<div class="hero-wrapper">
-  <div class="side designer">
-    <div class="content">
-      <h1>designer</h1>
-      <p>Desenvolvedor focado em UI design e sistemas de design.</p>
-    </div>
-    <div class="bg"></div>
-  </div>
+<div class="hero-clean">
+  <img src="/assets/images/bio-foto.png" class="avatar-main" alt="Samuel Freitas">
+  
+  <h1>Samuel Freitas</h1>
+  
+  <p class="bio-text">
+    <strong>Software Developer & QA Automation Engineer</strong>. 
+    Focado em construir sistemas resilientes e automações que garantem a qualidade do software. 
+  </p>
 
-  <div class="side coder">
-    <div class="content">
-      <h1>&lt;coder&gt;</h1>
-      <p>QA Automation Engineer que escreve código limpo e eficiente.</p>
-    </div>
-    <div class="bg"></div>
+  <div style="margin-top: 40px;">
+    <a href="/projetos/" style="color: var(--text-main); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--text-main);">Projetos</a>
+    <span style="margin: 0 20px; color: #eee;">|</span>
+    <a href="/shop/" style="color: var(--text-sub); text-decoration: none;">Shop</a>
   </div>
-
-  <img src="/assets/images/me-split.png" class="center-person" alt="Samuel Freitas">
 </div>
