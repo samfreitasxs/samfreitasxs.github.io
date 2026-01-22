@@ -1,0 +1,44 @@
+# Configurações do Site
+title: "Samuel Freitas"
+description: "Software Developer & QA Automation" # Você pode ajustar sua bio aqui
+url: "https://samuelfreitas.github.io" # O endereço gratuito do seu site
+baseurl: "" # Deixe vazio se o site estiver na raiz do repositório
+
+# Configurações do Tema (So Simple)
+remote_theme: "mmistakes/so-simple-theme"
+locale: "pt-BR"
+
+# Plugins necessários
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+# Configurações do Autor
+author:
+  name: "Samuel Freitas"
+  avatar: "/assets/images/bio-photo.jpg" # Caminho para sua foto no repositório
+  bio: "Desenvolvedor focado em automação e qualidade de software."
+  location: "Brasil"
+  links:
+    - title: "GitHub"
+      url: "https://github.com/samfreitasxs"
+      icon: "fab fa-fw fa-github"
+    - title: "LinkedIn"
+      url: "https://www.linkedin.com/in/samuelfreitass/"
+      icon: "fab fa-fw fa-linkedin"
+
+# Configurações de Leitura
+read_time: true
+words_per_minute: 200
+
+# Configurações de Posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      classes: "wide" # Deixa o texto com uma largura agradável
+      author_profile: true # Mostra sua bio ao lado do post
